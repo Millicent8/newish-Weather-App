@@ -48,13 +48,10 @@ function formateDate() {
 formateDate();
 
 function showCurrentTemperature(response) {
-  document.querySelector("#current-City").innerHTML = response.data.name;
-
   let celciusMin = Math.round(response.data.main.temp_min);
   let weatherDescription = response.data.weather[0].description;
-
   let celciusTemperature = Math.round(response.data.main.temp);
-
+  document.querySelector("#current-City").innerHTML = response.data.name;
   let iconElement = document.querySelector("#icon");
   let hudmidityElement = document.querySelector("#humidity");
   hudmidityElement.innerHTML = `Humidity:${Math.round(
@@ -89,8 +86,8 @@ function isCity(event) {
 }
 
 function showFarenheitTemperature(response) {
-  celciusLink.classList.add("active");
-  farenheitLink.classList.remove("active");
+  celciusLink.classList.remove("active");
+  farenheitLink.classList.add("active");
   let celciusTemperature = Math.round(response.data.main.temp);
   let celciusMin = Math.round(response.data.main.temp_min);
   let farenheitTemperature = (celciusTemperature * 9) / 5 + 32;
