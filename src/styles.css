@@ -35,19 +35,22 @@ h3 {
 }
 
 .circle {
-  height: 400px;
-  width: 400px;
-  margin-left: 150px;
+  height: 350px;
+  width: 350px;
+  margin-left: 200px;
+  margin-top: -100px;
   border-radius: 50%;
   background-color: rgb(255, 165, 0, 0.8);
+  z-index: -1;
+  position: absolute;
 }
 
-.weather-temp .active {
+.alternative-temperature .active {
   text-decoration: none;
   color: #231d3c;
 }
 
-.weather-temp .active:hover {
+.alternative-temperature .active:hover {
   text-decoration: none;
   cursor: default;
 }
