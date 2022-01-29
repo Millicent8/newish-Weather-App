@@ -118,6 +118,8 @@ h1 {
 }
 hr {
   background-color: #eb016e;
+  height: 300px;
+  padding: -20px;
 }
 .card {
   width: 140px;
@@ -129,15 +131,25 @@ hr {
 .line-3 {
   text-align: right;
 }
-.Wednesday {
+#monday {
+  background-color: #eb016e;
+}
+#tuesday {
+  background-color: blueviolet;
+}
+
+#Wednesday {
   margin-left: 550px;
   margin-top: 20px;
 }
-.Friday {
+#Thursday {
+  background-color: fuchsia;
+}
+#Friday {
   margin-left: 300px;
   margin-top: 40px;
 }
-.Saturday {
+#Saturday {
   margin-bottom: 400px;
 }
 .search {
