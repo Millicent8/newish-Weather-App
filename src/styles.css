@@ -45,16 +45,6 @@ h3 {
   position: absolute;
 }
 
-.alternative-temperature .active {
-  text-decoration: none;
-  color: #231d3c;
-}
-
-.alternative-temperature .active:hover {
-  text-decoration: none;
-  cursor: default;
-}
-
 h1 {
   margin-bottom: 0 auto;
 }
@@ -95,21 +85,12 @@ h1 {
   font-size: 40px;
 }
 
-.alternative-temperature {
-  max-width: 50em;
-  margin: 0 auto;
-  transform: skewY(deg);
-  font-size: 25px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  margin-top: 3px;
-}
 .diagonal-Bottom-Box {
   background-image: linear-gradient(45deg, #eb016e, #ff0099);
   transform: skewY(10deg);
   width: 300px;
   margin-left: 90px;
-  margin-top: -30px;
+  margin-top: 15px;
   text-align: right;
   font-size: 35px;
 }
