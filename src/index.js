@@ -4,7 +4,7 @@ function formateTime() {
   let currentHour = document.querySelector("#current-Time");
   let hour = now.getHours();
   let minutes = now.getMinutes();
-  if (hour > 10 && minutes > 10) {
+  if (hour < 10 && minutes < 10) {
     currentHour.innerHTML = `0${hour}:0${minutes}`;
   } else {
     currentHour.innerHTML = `${hour}:${minutes}`;
@@ -71,7 +71,7 @@ function showForecast(response) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
-        `<div class="row">
+        `<div class="row-11 col-4">
  <div class="col-3">
    <div class="card">
      <ul class="list-group list-group-flush">

@@ -76,7 +76,7 @@ h1 {
   height: 80px;
   margin-left: 160px;
   margin-top: 10px;
-  font-size: 60px;
+  font-size: 54px;
 }
 
 .diagonal-temperature-Box {
@@ -105,17 +105,30 @@ hr {
 }
 .card {
   width: 140px;
-  height: 120px;
+  height: 100px;
   list-style: none;
   margin-left: 200px;
+  background-color: #eb016e;
 }
 .line-1,
 .line-3 {
   text-align: right;
+  border: none;
+}
+.line-2 {
+  border: none;
+}
+.line-3 {
+  padding: 3px;
+}
+.line-1,
+.line-2,
+.line-3 {
+  background: linear-gradient(150deg, #f731db, #4600f1 100%);
 }
 
 #forecast-icon {
-  height: 70px;
+  height: 50px;
 }
 
 .search {
