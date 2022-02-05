@@ -13,6 +13,10 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
         crossorigin="anonymous"
       />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
       <script
         src="https://kit.fontawesome.com/19424b9d75.js"
         crossorigin="anonymous"></script>
@@ -25,11 +29,11 @@
         <h1 id="current-City"> </h1>
         <h2 id="current-Time">00:00</h2>
      <div class="diagonal-Top-Box">
-    <div class="content" id="current-Date">Saturday 12th December</div>
+    <div class="content" id="current-Date"></div>
   </div>
   <ul class="conditions">
-    <li id="Wind"> Wind Speed: </li>
-    <li id="humidity"> Humidty: </li>
+    <li id="Wind"></li>
+    <li id="humidity"></li>
   </ul>
   <div class="circle"></div>
         <div class="diagonal-Middle-Box clearfix weather-temp">
@@ -43,13 +47,10 @@
   <br/>
   <br/>
   <br/>
-  <p class="code"> 
-    <a id="open-source" href="https://github.com/Millicent8/Weather-App-Project" target="_blank">Open-Source Code</a> by Millie Stinson </p>
-    <hr/>
+ <hr/>
     <div id="forecast">
-        
         </div>
-        <div class="card search">
+        <div class="card search" id="search">
           <div class="card-body">
             <form class="City" id="city-Search">
               <input type="text" 
@@ -63,6 +64,8 @@
         </div>
       </div>
     </div>
+    <p class="code"> 
+      <a id="open-source" href="https://github.com/Millicent8/Weather-App-Project" target="_blank">Open-Source Code</a> by Millie Stinson </p>
       <button id="Location">
         Current Location
       </button>

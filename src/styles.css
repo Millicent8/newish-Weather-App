@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: "Audiowide", cursive;
   padding: 0 20px;
   background-image: linear-gradient(
     to bottom,
@@ -76,7 +76,7 @@ h1 {
   height: 80px;
   margin-left: 160px;
   margin-top: 10px;
-  font-size: 48px;
+  font-size: 60px;
 }
 
 .diagonal-temperature-Box {
@@ -92,10 +92,11 @@ h1 {
   margin-left: 90px;
   margin-top: 15px;
   text-align: right;
-  font-size: 35px;
+  font-size: 30px;
 }
 #icon {
   margin-top: -40px;
+  height: 90px;
 }
 hr {
   background-color: #eb016e;
@@ -112,35 +113,18 @@ hr {
 .line-3 {
   text-align: right;
 }
-#monday {
-  background-color: #eb016e;
-}
-#tuesday {
-  background-color: blueviolet;
-}
 
-#Wednesday {
-  margin-left: 550px;
-  margin-top: 20px;
-}
-#Thursday {
-  background-color: fuchsia;
-}
-#Friday {
-  margin-left: 300px;
-  margin-top: 40px;
-}
-#Saturday {
-  margin-bottom: 400px;
+#forecast-icon {
+  height: 70px;
 }
 
 .search {
   height: 70px;
-  width: 280px;
+  width: 300px;
   background-color: rgba(0, 18, 236, 0.2);
   margin-top: 400px;
   margin-bottom: 30px;
-  margin-left: 230px;
+  margin-left: 260px;
 }
 
 .logo {
@@ -155,11 +139,6 @@ hr {
   width: 75%;
 }
 
-.cities {
-  background: #fff;
-  padding: 20px;
-}
-
 #Location {
   display: block;
   margin-left: 320px;
@@ -172,6 +151,7 @@ hr {
 #open-source {
   text-decoration: underline;
   color: #004d97;
+  text-align: center;
 }
 .code {
   font-size: 12px;

@@ -4,7 +4,7 @@ function formateTime() {
   let currentHour = document.querySelector("#current-Time");
   let hour = now.getHours();
   let minutes = now.getMinutes();
-  if (hour < 10 && minutes < 10) {
+  if (hour > 10 && minutes > 10) {
     currentHour.innerHTML = `0${hour}:0${minutes}`;
   } else {
     currentHour.innerHTML = `${hour}:${minutes}`;
@@ -73,7 +73,7 @@ function showForecast(response) {
         forecastHTML +
         `<div class="row">
  <div class="col-3">
-   <div class="card" id="Monday">
+   <div class="card">
      <ul class="list-group list-group-flush">
        <li class="list-group-item line-1">${Math.round(
          forecastDay.temp.max
@@ -110,11 +110,11 @@ function showCurrentTemperature(response) {
   let hudmidityElement = document.querySelector("#humidity");
   hudmidityElement.innerHTML = `Humidity:${Math.round(
     response.data.main.humidity
-  )}`;
+  )}°`;
   let windElement = document.querySelector("#Wind");
-  windElement.innerHTML = `Wind: ${Math.round(response.data.wind.speed)}`;
+  windElement.innerHTML = `Wind: ${Math.round(response.data.wind.speed)}mph`;
   let replacmentTemperature = document.querySelector("#automatic-reading");
-  replacmentTemperature.innerHTML = `${celciusTemperature}°C | ${celciusMin}°C`;
+  replacmentTemperature.innerHTML = ` ${celciusTemperature}°C | ${celciusMin}°C`;
   let currentDescription = document.querySelector("#description");
   currentDescription.innerHTML = `${weatherDescription}`;
   iconElement.setAttribute(
