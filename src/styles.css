@@ -96,7 +96,7 @@ h1 {
 }
 #icon {
   margin-top: -40px;
-  height: 90px;
+  height: 60px;
 }
 hr {
   background-color: #eb016e;
@@ -107,8 +107,10 @@ hr {
   width: 140px;
   height: 100px;
   list-style: none;
-  margin-left: 200px;
+  margin-left: 140px;
   background-color: #eb016e;
+  box-shadow: 5px 50px 18px #eb016e;
+  margin-top: 100px;
 }
 .line-1,
 .line-3 {
@@ -131,13 +133,16 @@ hr {
   height: 50px;
 }
 
-.search {
-  height: 70px;
-  width: 300px;
-  background-color: rgba(0, 18, 236, 0.2);
-  margin-top: 400px;
-  margin-bottom: 30px;
-  margin-left: 260px;
+.card-city {
+  background-color: rgba(0, 18, 236, 0.3);
+  border-radius: 10px;
+  width: 100%;
+  margin-left: 150px;
+  margin-top: 300px;
+}
+
+#search {
+  background-color: #f731db;
 }
 
 .logo {

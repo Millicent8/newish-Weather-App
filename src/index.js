@@ -71,7 +71,7 @@ function showForecast(response) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
-        `<div class="row-11 col-4">
+        `<div class="row-1 col-4">
  <div class="col-3">
    <div class="card">
      <ul class="list-group list-group-flush">
