@@ -140,20 +140,14 @@ function isCity(event) {
   axios.get(`${apiUrl}`).then(showCurrentTemperature);
 }
 
-function showLocationTemperature(response) {
-  let temp = Math.round(response.data.main.temp);
-  let tempMin = Math.round(response.data.main.temp_min);
-  document.querySelector(
-    "#automatic-reading"
-  ).innerHTML = `${temp}°C | ${tempMin}°C`;
-}
+
 function currentLocation(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
   let apiKey = "25c5997bc71299b7ffa2b6572f41f1d0";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(showLocationTemperature);
+  axios.get(apiUrl).then(showCurrentTemperature);
 }
 
 function isLocation(event) {
